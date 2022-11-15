@@ -3,7 +3,7 @@ import { LoginOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import '../assets/css/home.css';
-import qingtian from '../assets/media/qintian.mp3'
+import qingtian from '../assets/media/qingtian.mp3'
 
 const handleClick = (navigate) => {
     navigate("/main")
