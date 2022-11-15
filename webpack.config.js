@@ -29,36 +29,15 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    {
-                        loader: 'style-loader',
-                    },
-                    {
-                        loader: 'css-loader',
-                    }
-                ]
+                use: [ 'style-loader', 'css-loader' ]
             },
             {
-                test: /\.(less|css)$/,
-                use: [
-                    {
-                        loader: 'css-loader',
-                    },
-                    {
-                        loader: 'less-loader',
-                    }
-                ]
+                test: /\.less$/,
+                use: [ 'css-loader', 'less-loader' ]
             },
             {
                 test: /\.(sass|scss)$/,
-                use: [
-                    {
-                        loader: 'css-loader',
-                    },
-                    {
-                        loader: 'sass-loader',
-                    }
-                ]
+                use: ['css-loader', 'sass-loader' ]
             },
             { 
                 test: /\.(jpg|png|jpeg|gif)$/,
@@ -67,6 +46,7 @@ module.exports = {
                         loader: 'url-loader',
                         options: {
                             limit: 1024,
+                            esModule: false,
                             fallback: {
                                 loader: 'file-loader',
                                 options: {
@@ -75,7 +55,8 @@ module.exports = {
                             }
                         }
                     }
-                ]
+                ],
+                type: 'javascript/auto'
              }, 
              {
                 test: /\.(mp4|webm|ogg|mp3|wav)$/,

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.home_div {
+    background-image: url(/src/assets/images/home_backgrounp.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.home_entry {
+
+}
+
+.home_welcome {
+    width: 50rem;
+    height: 10rem;
+    top: 6rem;
+    left: 50%;
+    margin-left: -25rem;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.home_music {
+    top: 16rem;
+    left: 50%;
+    margin-left: -10rem;
+    position: absolute;
+}
+
